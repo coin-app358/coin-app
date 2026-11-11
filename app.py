@@ -41,5 +41,5 @@ try:
     st.plotly_chart(fig, use_container_width=True)
     st.dataframe(df.tail(10), use_container_width=True)
     st.success("Live data from Binance ✅")
-except Exception as e:
+    except Exception as e:
     st.error(f"Data ganna baha. Tikak inna passe refresh karanna. Error: {e}")
