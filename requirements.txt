@@ -1,8 +1,4 @@
 streamlit
 plotly
 pandas
-python-binance
-ta
-scikit-learn
 requests
-numpy
