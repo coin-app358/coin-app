@@ -13,7 +13,7 @@ timeframe = st.selectbox("Timeframe", ["15m", "1h", "4h", "1d"])
 @st.cache_data(ttl=60)
 def get_data(symbol, interval):
  url = "https://data-api.binance.vision/api/v3/klines"
-    params = {"symbol": symbol, "interval": interval, "limit": 100}
+ params = {"symbol": symbol, "interval": interval, "limit": 100}
     r = requests.get(url, params=params, timeout=10)
     data = r.json()
     df = pd.DataFrame(data, columns=["time","open","high","low","close","volume","close_time","qav","trades","taker_base","taker_quote","ignore"])
